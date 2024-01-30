@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX Launches</title>
+    <style>
+      #launchesContainer {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+      }
+      .flightCard {
+        border: 1px solid #911a1a;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .btnSection {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btnSection">
+      <h1>SpaceX Launches</h1>
+      <button id="allLaunchesBtn">All Launches</button>
+      <button id="successfulFlightsBtn">Successful Flights</button>
+    </div>
+    <div id="launchesContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
